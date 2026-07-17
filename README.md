@@ -10,9 +10,7 @@ This repository contains my Python learning notebooks and practice exercises.
 - Loops
 - Functions
 - Object-Oriented Programming
-- NumPy
-- Pandas
-- Projects
+
 
 ## Purpose
 
