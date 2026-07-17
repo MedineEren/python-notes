@@ -1,0 +1,41 @@
+SELECT * FROM demo;   --sql lite de demoyu gösterir. query i gösterir.demo tablosunun 
+--select * demek her eşyi seç demek.
+
+
+SELECT * FROM demo LIMIT 10;   --10 TANE DATA GÖSTER DEDİ LİMİTLEDİ
+
+
+SELECT * FROM demo WHERE name='import';   --NAME KOLONUN İMPORTA EŞİT OLDUĞU YERLERİ GETİR
+
+
+SELECT name FROM demo;    -- * yerine name yazınca sadece name kolonunu getirdi
+
+SELECT id ,hint FROM demo    --id ve hint kolonlarını istiyor
+
+
+SELECT * FROM demo WHERE id>10;  --id 10dan büyük olan yerleri okutur
+
+SELECT * FROM demo WHERE name LİKE"S%"   -- name koonunda S HARFİYLE BAŞLLAYANLARI GETİR
+ 
+
+SELECT * FROM demo WHERE name LİKE"%m"    --name kolonunda m harfi ile bitenleri getir
+
+
+INSERT INTO demo (name,hint) VALUES('Medine','EREN');  --insert into ile demo tablonsunun name ve hint kolonuna ekleme yapıyoruz
+
+SELECT * FROM demo;
+
+
+--GUNCELLEME  
+UPDATE demo SET name='ERTUĞRUL' WHERE id=29;  --id si 29 olanın ismini ERTUĞRUL olarak güncelledi
+SELECT *FROM demo --diyince güncel hali okuyor
+
+
+--tablo oluşturma
+CREATE TABLE IF NOT EXISTS Students (id INTEGER PRIMARY KEY, name VARCHAR, surname VARCHAR);
+INSERT INTO Students (name, surname) VALUES ('A','B');  -- tabloya ekleme yapmak
+INSERT INTO Students (name, surname) VALUES ('C','D');
+INSERT INTO Students (name, surname) VALUES ('E','F');
+SELECT * FROM students;  -- tabloyu okumak
+
+
